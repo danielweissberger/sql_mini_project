@@ -156,11 +156,10 @@ WHERE total_revenue<1000
 
 /*NOTES: I used left join for the last 3 questions. Although the results are the same, there is a possibility that a
   booking has a memid not found in the members table which we still want to join to facilities
-  (if a tennis court was booked by this mystery member)
+  (if a facility was booked by a mystery member)
   
-  A regular join is fine for facilities since we are only interested in tennis court bookings. 
-  Any unidentifiable facid's in bookings would not be useful and any facids in facilities 
-  not matching bookings would also be irrelevant since we are only intersted in bookings.*/
+  A regular join is fine for facilities since we are only bookings which correspond to a facility in
+  the facilities table. */
 
 
 
